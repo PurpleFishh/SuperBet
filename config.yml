@@ -1,0 +1,108 @@
+#  --= SuperBet =--
+# -Plugin by PurpleFishh
+# This plugin is a bet plugin with roulette game
+# This game is simple, you bet on a color(red, black or green), if you bet on red or black and you will get the money you bet x2 and if you bet on green and you win you will get x14 but it is a smaller chance 
+
+
+# - Messages -
+# You can use '&' and the color code after for color in messages 
+
+# The message that the player gets when he don't have a permission
+permission: "&cYou don't have the permission!"
+
+# Put the water-mark of the plugin that will be in front of all the messages
+water_mark: "&4[&cSuperBet&4]"
+
+# The message that the player wants to execute a command for a offline player
+offline_player: "&cThe player is offline!"
+# The message that the player gets when he give the betting item to a player
+send_item: "&aThe item was send with succes!"
+# The message that the player gets when he get the betting item
+get_item: "&aYou have received the betting item."
+# The message that the player gets when he wants to bet when the roulette is already started
+started_game: "&cYou can't bet when the roulette is already started!"
+# The message that the player gets when he wants to bet a amount of 0 money
+no_money_bet: "&cYou can't bet with the amount of 0 money!"
+# The message that the player gets when he select a amount of money, use %sum% for the amount of money
+money_select: "&aYou had selected the sum of %sum%!"
+# The message that the player gets when he wants to select a sum less the 0
+make_less_zero: "&cYour amount is already 0!"
+# The message that the player gets when he win, use %sum% for the amount of money that he wins
+win: "&aYou win: %sum%!"
+# The message that the player gets when he lose
+lose: "&cYou lose!"
+# The message that the player gets when he the game stats
+start: "&aThe roulette has stared!"
+# The message that the player gets when he the game stats in some time, use %time% for the time that remain 
+start_in_time: "&aThe roulette stats in &b%time%!"
+
+# Put the time that takes for the roulette to start (in sec)
+time: 30
+
+
+# Please use the text name of the items cause in 1.13+ items id are no more available, you can only use the text id, if you get an error please firstly verify the items id
+# -Betting Item
+
+# This are the informations for the betting item that the players right-click to open the inventory
+# Put the name of the item
+betting-item-name: "&6Super Bet"
+# Put the lore for the item
+betting-item-lore:
+ - "&eWith this item you enter in the betting menu"
+# Put the item id
+betting-item-id: "GOLD_INGOT"
+
+# -Exit Item
+# That is the item that will be in every inventory for going back or exit
+exit_id: "SLIME_BALL"
+exit_name: "&cBack"
+
+# -Main bet inventory
+# This is the main inventory that will open when you right-click the betting item
+
+main_inv_name: "&cRoulette"
+
+# Betting Items: 
+red_id: "RED_TERRACOTTA"
+red_name: "&cRed"
+green_id: "GREEN_TERRACOTTA"
+green_name: "&aGreen"
+black_id: "BLACK_TERRACOTTA" 
+black_name: "&8Black"
+
+# Betting buttons: the items that if you click you will get in the inventory for betting on this color
+red_button_name: "&cRed"
+red_button_lore: 
+ - "&7Bet on &cRed"
+green_button_name: "&aGreen" 
+green_button_lore: 
+ - "&7Bet on &aGreen"
+black_button_name: "&8Black"
+black_button_lore: 
+ - "&7Bet on &8Black"
+
+# The items that are on the background
+main_bg_id: "WHITE_STAINED_GLASS_PANE"
+line_bg_id: "GRAY_STAINED_GLASS_PANE"
+
+# -Bet money
+# This is the inventory that will open when you what to bet on a color and now you need to select the amount of money
+
+bet_inv_name: "&aBetting"
+
+# Increase and decrease the amount of money
+increase_id: "LIME_STAINED_GLASS"
+increase_amount_color: "&a" 
+
+decrease_id: "RED_STAINED_GLASS"
+decrease_amount_color: "&c" 
+
+# Put the bet or cancel it
+
+put_id: "DIAMOND"
+put_name: "&aBet"
+
+cancel_id: "SLIME_BALL"
+cance_name: "&cCancel"
+
+

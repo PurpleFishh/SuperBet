@@ -1,0 +1,9 @@
+name: SuperBet
+main:  me.purplefishh.dipcraft.superbet.main.Main
+version: 0.9
+author: PurpleFishh
+api-version: 1.14
+commands: 
+   bet:
+      description: Get Bet Item.
+      usage: /<command>
